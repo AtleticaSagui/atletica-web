@@ -1,9 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
 import { createGlobalStyle } from 'styled-components'
 import Header from './components/Header/index.tsx'
 import Menu from './components/Menu/index.tsx'
+import MainContent from './components/MainContent/index.tsx'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -45,6 +45,8 @@ createRoot(document.getElementById('root')!).render(
     <GlobalStyle />
     <Header />
     <Menu />
-    <App />
-  </StrictMode>,
+    <MainContent showBackground={true}>
+
+    </MainContent>
+  </StrictMode>
 )
