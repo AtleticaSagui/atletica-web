@@ -35,6 +35,7 @@ const HeaderSocialMedia = styled.div`
 const Redirect = styled.a`
     display: flex;
     height: 100%;
+    cursor: pointer;
 `
 
 const SocialMediaIcon = styled.img`
