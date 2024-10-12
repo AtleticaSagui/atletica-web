@@ -21,9 +21,9 @@ const MainContainer = styled.main<MainContainerProps>`
     justify-content: center;
 `;
 
-function MainContent({showBackground, children}) {
+function MainContent({hasBackground, children}: MainContainerProps) {
     return (
-        <MainContainer hasBackground={showBackground}>
+        <MainContainer hasBackground={hasBackground}>
             {children}
         </MainContainer>
     )
