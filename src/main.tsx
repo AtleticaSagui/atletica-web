@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import { createGlobalStyle } from 'styled-components'
 import Header from './components/Header/index.tsx'
+import Menu from './components/Menu/index.tsx'
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -13,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
   html{
     font-size: 62.5%;
+    font-family: "Lalezar";
   }
   
   body, #root{
@@ -21,6 +23,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: 100vh;
     background-color: white;
+    flex-direction: column;
   }
 
   :root{
@@ -41,6 +44,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <GlobalStyle />
     <Header />
+    <Menu />
     <App />
   </StrictMode>,
 )
