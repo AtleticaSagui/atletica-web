@@ -21,6 +21,7 @@ const MenuOption = styled.li`
     font-size: 2rem;
     list-style: none;
     color: white;
+    cursor: pointer;
 `;
 
 function Menu(){

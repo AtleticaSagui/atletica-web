@@ -1,9 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
 import { createGlobalStyle } from 'styled-components'
 import Header from './components/Header/index.tsx'
 import Menu from './components/Menu/index.tsx'
+import MainContent from './components/MainContent/index.tsx'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Icon from "./assets/img/icons/logo.png";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -43,8 +45,12 @@ const GlobalStyle = createGlobalStyle`
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <GlobalStyle />
-    <Header />
-    <Menu />
-    <App />
-  </StrictMode>,
+    <BrowserRouter>
+      <Header />
+      <Menu />
+      <Routes>
+        <Route path='/' element={<MainContent showBackground={true}> <img src={Icon} alt='icon' height="450px"/> </MainContent>} />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
 )
