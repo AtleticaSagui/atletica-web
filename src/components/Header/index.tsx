@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import Logo from "./../../assets/img/logo.png";
-import DiscordIcon from "./../../assets/img/discordIcon.svg";
-import InstagramIcon from "./../../assets/img/instagramIcon.svg";
-import WhatsappIcon from "./../../assets/img/whatsappIcon.svg";
+import Logo from "./../../assets/img/icons/logo.png";
+import DiscordIcon from "./../../assets/img/icons/discordIcon.svg";
+import InstagramIcon from "./../../assets/img/icons/instagramIcon.svg";
+import WhatsappIcon from "./../../assets/img/icons/whatsappIcon.svg";
 
 const icons = [DiscordIcon, InstagramIcon, WhatsappIcon];
 
