@@ -49,7 +49,7 @@ createRoot(document.getElementById('root')!).render(
       <Header />
       <Menu />
       <Routes>
-        <Route path='/' element={<MainContent showBackground={true}> <img src={Icon} alt='icon' height="80%"/> </MainContent>} />
+        <Route path='/' element={<MainContent showBackground={true}> <img src={Icon} alt='icon' height="450px"/> </MainContent>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
