@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const guestOptions = ["HOME", "CALENDARIO", "TIMES", "ENTRAR", "REGISTRAR"];
-const userOptions = ["HOME", "CALENDARIO", "TIMES", "MINHA CONTA", "SAIR"];
+//const userOptions = ["HOME", "CALENDARIO", "TIMES", "MINHA CONTA", "SAIR"];
 
 const MenuContainer = styled.nav`
     position: relative;
