@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const guestOptions = ["HOME", "CALENDARIO", "TIMES", "ENTRAR", "REGISTRAR"];
-const userOptions = ["HOME", "CALENDARIO", "TIMES", "MINHA CONTA", "SAIR"];
+const guestOptions = [
+    ["HOME", "/"], 
+    ["CALENDARIO", "/calendar"], 
+    ["TIMES", "/teams"], 
+    ["ENTRAR", "/login"], 
+    ["REGISTRAR", "/register"]
+];
+//const userOptions = ["HOME", "CALENDARIO", "TIMES", "MINHA CONTA", "SAIR"];
 
 const MenuContainer = styled.nav`
     position: relative;
@@ -29,7 +36,9 @@ function Menu(){
         <MenuContainer>
             {
                 guestOptions.map((option) => (
-                    <MenuOption> {option} </MenuOption>
+                    <Link to={option[1]}>
+                        <MenuOption> {option[0]} </MenuOption>
+                    </Link>
                 ))
             }
         </MenuContainer>
